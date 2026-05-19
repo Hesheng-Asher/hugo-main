@@ -1,16 +1,18 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: Hesheng-Asher/hugo-main
+  branch: main
+  use_graphql: true
 
 local_backend: true
 locale: zh_Hans
 
-site_url: https://demo.stack.cai.im
-display_url: https://demo.stack.cai.im
-logo_url: /img/avatar.png
+site_url: https://hesheng-asher.github.io/hugo-main/
+display_url: https://hesheng-asher.github.io/hugo-main/
+logo_url: /hugo-main/img/avatar.png
 
 media_folder: static/uploads
-public_folder: /uploads
+public_folder: /hugo-main/uploads
 
 collections:
   - name: posts
