@@ -1,4 +1,4 @@
 theme = "hugo-theme-stack"
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+locale = 'zh-cn'
+title = 'Hugo 主题 Stack'

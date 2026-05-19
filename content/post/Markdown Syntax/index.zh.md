@@ -3,12 +3,12 @@ title: Markdown 语法指南
 date: 2026-01-25
 description: 展示基本 Markdown 语法和 HTML 元素格式的示例文章。
 tags:
-    - markdown
-    - css
-    - html
-    - themes
+    - Markdown 语法
+    - 样式
+    - 网页
+    - 主题
 categories:
-    - Documentation
+    - 文档
 image: pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg
 ---
 

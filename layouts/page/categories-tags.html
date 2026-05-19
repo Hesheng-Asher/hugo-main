@@ -1,0 +1,49 @@
+{{ define "body-class" }}article-page template-categories-tags{{ end }}
+
+{{ define "main" }}
+    <article class="main-article categories-tags-page">
+        <header class="article-header">
+            <div class="article-details">
+                <div class="article-title-wrapper">
+                    <h2 class="article-title">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                    {{ with .Params.description }}
+                        <h3 class="article-subtitle">{{ . }}</h3>
+                    {{ end }}
+                </div>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <div class="taxonomy-clouds">
+                {{ partial "widget/taxonomy" (dict
+                    "Context" .
+                    "Params" (dict
+                        "taxonomy" "categories"
+                        "title" "分类"
+                        "icon" "categories"
+                        "limit" 100
+                        "showLink" false
+                    )
+                ) }}
+
+                {{ partial "widget/taxonomy" (dict
+                    "Context" .
+                    "Params" (dict
+                        "taxonomy" "tags"
+                        "title" "标签云"
+                        "icon" "tag"
+                        "limit" 100
+                        "showLink" false
+                    )
+                ) }}
+            </div>
+        </div>
+    </article>
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}{{ end }}
+

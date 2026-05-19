@@ -5,10 +5,10 @@ date: 2026-01-26
 slug: image-gallery
 image: helena-hertz-wWZzXlDpMog-unsplash.jpg
 categories:
-    - Documentation
+    - 文档
 tags:
-    - Gallery
-    - Photoswipe
+    - 相册
+    - 图片灯箱
 toc: false
 ---
 

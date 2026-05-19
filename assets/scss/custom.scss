@@ -1,0 +1,17 @@
+.template-categories-tags {
+    .categories-tags-page {
+        .article-content {
+            margin-top: var(--card-padding);
+        }
+    }
+
+    .taxonomy-clouds {
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-separation);
+
+        .widget {
+            gap: var(--spacing-md);
+        }
+    }
+}
