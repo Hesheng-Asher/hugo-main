@@ -1,4 +1,4 @@
-baseURL                = "https://demo.stack.cai.im/"
+baseURL                = "https://hesheng-asher.github.io/hugo-main/"
 locale                 = "zh-cn"
 title                  = "Hugo \u4e3b\u9898 Stack"
 defaultContentLanguage = "zh"
