@@ -22,7 +22,29 @@ favicon        = "img/avatar.png"
 
 [comments]
     enabled  = true
-    provider = "disqus"
+    provider = "giscus"
+
+[cookies]
+    enabled = false
+
+    [cookies.categories]
+        analytics  = true
+        functional = true
+
+[comments.giscus]
+    repo = "Hesheng-Asher/hesheng-asher.github.io"
+    repoID = ""
+    category = "Announcements"
+    categoryID = ""
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    lightTheme = "light"
+    darkTheme = "dark_dimmed"
+    lang = "zh-CN"
+    loading = "lazy"
 
 # GDPR Cookie Consent Configuration
 # When enabled, analytics and functional cookies require user consent
