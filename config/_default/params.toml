@@ -35,6 +35,6 @@ favicon        = "img/avatar.png"
         functional = true
 
 [comments.disqusjs]
-    shortname = "myblog"
+    shortname = "heshengblog"
     apiUrl = "https://disqus.com/api/"
     apikey = "mnEp7qgVnFECppwTLrDCLk33RUTtwn5vf2sD0OZz0CqxadQxFUgjORYcpwDNlJtb"
