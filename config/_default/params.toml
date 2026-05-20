@@ -22,9 +22,8 @@ favicon        = "img/avatar.png"
     page     = [{ type = "toc" }]
 
 [comments]
-    # See complete configuration in config/_default/params.toml
     enabled  = true
-    provider = "disqus"
+    provider = "disqusjs"
 
 # GDPR Cookie Consent Configuration
 # When enabled, analytics and functional cookies require user consent
@@ -34,3 +33,8 @@ favicon        = "img/avatar.png"
     [cookies.categories]
         analytics  = true
         functional = true
+
+[comments.disqusjs]
+    shortname = "myblog"
+    apiUrl = "https://disqus.com/api/"
+    apikey = "mnEp7qgVnFECppwTLrDCLk33RUTtwn5vf2sD0OZz0CqxadQxFUgjORYcpwDNlJtb"
