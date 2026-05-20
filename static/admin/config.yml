@@ -2,9 +2,8 @@ backend:
   name: github
   repo: Hesheng-Asher/hesheng-asher.github.io
   branch: main
-  use_graphql: true
+  open_authoring: true
 
-local_backend: true
 locale: zh_Hans
 
 site_url: https://hesheng-asher.github.io/
@@ -12,7 +11,7 @@ display_url: https://hesheng-asher.github.io/
 logo_url: /img/avatar.png
 
 media_folder: static/uploads
-  public_folder: /uploads
+public_folder: /uploads
 
 collections:
   - name: posts
