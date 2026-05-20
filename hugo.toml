@@ -1,4 +1,4 @@
 theme = "hugo-theme-stack"
 baseURL = 'https://hesheng-asher.github.io/'
 locale = 'zh-cn'
-title = 'Hugo 主题 Stack'
+title = 'Hesheng Blog'

@@ -1,6 +1,6 @@
 baseURL                = "https://hesheng-asher.github.io/"
 locale                 = "zh-cn"
-title                  = "Hugo \u4e3b\u9898 Stack"
+title = "Hesheng Blog"
 defaultContentLanguage = "zh"
 hasCJKLanguage         = true
 
