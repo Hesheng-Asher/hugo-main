@@ -1,18 +1,18 @@
 backend:
   name: github
-  repo: Hesheng-Asher/hugo-main
+  repo: Hesheng-Asher/hesheng-asher.github.io
   branch: main
   use_graphql: true
 
 local_backend: true
 locale: zh_Hans
 
-site_url: https://hesheng-asher.github.io/hugo-main/
-display_url: https://hesheng-asher.github.io/hugo-main/
-logo_url: /hugo-main/img/avatar.png
+site_url: https://hesheng-asher.github.io/
+display_url: https://hesheng-asher.github.io/
+logo_url: /img/avatar.png
 
 media_folder: static/uploads
-public_folder: /hugo-main/uploads
+  public_folder: /uploads
 
 collections:
   - name: posts

@@ -1,4 +1,4 @@
-baseURL                = "https://hesheng-asher.github.io/hugo-main/"
+baseURL                = "https://hesheng-asher.github.io/"
 locale                 = "zh-cn"
 title                  = "Hugo \u4e3b\u9898 Stack"
 defaultContentLanguage = "zh"
