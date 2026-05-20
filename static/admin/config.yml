@@ -10,14 +10,14 @@ site_url: https://hesheng-asher.github.io/
 display_url: https://hesheng-asher.github.io/
 logo_url: /img/avatar.png
 
-media_folder: static/uploads
-public_folder: /uploads
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: posts
-    label: "\u6587\u7ae0"
-    label_singular: "\u6587\u7ae0"
-    folder: content/post
+  - name: "posts"
+    label: "文章"
+    label_singular: "文章"
+    folder: "content/post"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     path: "{{slug}}/index.zh"
@@ -27,273 +27,266 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "\u6807\u9898"
-        name: title
-        widget: string
-      - label: "\u53d1\u5e03\u65e5\u671f"
-        name: date
-        widget: datetime
-        format: YYYY-MM-DD
-        date_format: YYYY-MM-DD
+      - label: "标题"
+        name: "title"
+        widget: "string"
+      - label: "发布日期"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
         time_format: false
-      - label: "\u63cf\u8ff0"
-        name: description
-        widget: text
+      - label: "描述"
+        name: "description"
+        widget: "text"
         required: false
-      - label: "\u5c01\u9762\u56fe"
-        name: image
-        widget: image
+      - label: "封面图"
+        name: "image"
+        widget: "image"
         required: false
-        hint: "\u65b0\u6587\u7ae0\u4e2d\u4e0a\u4f20\u7684\u56fe\u7247\u4f1a\u548c\u6587\u7ae0\u4e00\u8d77\u653e\u5728 content/post/<\u6587\u7ae0\u8def\u5f84>/ \u76ee\u5f55\u91cc\u3002"
-      - label: "\u5206\u7c7b"
-        name: categories
-        widget: select
-        required: false
-        multiple: true
-        options:
-          - "\u6587\u6863"
-        hint: "\u8fd9\u91cc\u548c\u524d\u53f0\u5206\u7c7b\u4fdd\u6301\u4e00\u81f4\u3002"
-      - label: "\u6807\u7b7e"
-        name: tags
-        widget: select
+      - label: "分类"
+        name: "categories"
+        widget: "select"
         required: false
         multiple: true
         options:
-          - "\u9690\u79c1"
-          - "Markdown \u8bed\u6cd5"
-          - "\u6837\u5f0f"
-          - "\u7f51\u9875"
-          - "\u4e3b\u9898"
-          - "\u76f8\u518c"
-          - "\u56fe\u7247\u706f\u7bb1"
-        hint: "\u8fd9\u91cc\u548c\u524d\u53f0\u6807\u7b7e\u4e91\u4fdd\u6301\u4e00\u81f4\u3002"
-      - label: "\u8349\u7a3f\uff08\u4e0d\u53d1\u5e03\uff09"
-        name: draft
-        widget: boolean
+          - "文档"
+      - label: "标签"
+        name: "tags"
+        widget: "select"
+        required: false
+        multiple: true
+        options:
+          - "隐私"
+          - "Markdown 语法"
+          - "样式"
+          - "网页"
+          - "主题"
+          - "相册"
+          - "图片灯箱"
+      - label: "草稿（不发布）"
+        name: "draft"
+        widget: "boolean"
         default: false
         required: false
-        hint: "\u5f00\u542f\u540e\u4f1a\u5728\u540c\u4e00\u7bc7\u6587\u7ae0\u7684 front matter \u91cc\u5199\u5165 draft: true\uff0c\u6587\u4ef6\u4ecd\u7136\u4fdd\u5b58\u5728 content/post/<\u6587\u7ae0\u8def\u5f84>/index.zh.md\u3002"
-      - label: "\u6b63\u6587"
-        name: body
-        widget: markdown
+      - label: "正文"
+        name: "body"
+        widget: "markdown"
 
-  - name: pages
-    label: "\u9875\u9762"
+  - name: "pages"
+    label: "页面"
     editor:
       preview: false
     files:
-      - name: home
-        label: "\u9996\u9875"
-        file: content/_index.zh.md
+      - name: "home"
+        label: "首页"
+        file: "content/_index.zh.md"
         fields:
-          - label: "\u83dc\u5355"
-            name: menu
-            widget: object
+          - label: "菜单"
+            name: "menu"
+            widget: "object"
             required: false
             collapsed: true
             fields:
-              - label: "\u4e3b\u83dc\u5355"
-                name: main
-                widget: object
+              - label: "主菜单"
+                name: "main"
+                widget: "object"
                 required: false
                 fields:
-                  - label: "\u540d\u79f0"
-                    name: name
-                    widget: string
+                  - label: "名称"
+                    name: "name"
+                    widget: "string"
                     required: false
-                  - label: "\u6392\u5e8f\u6743\u91cd"
-                    name: weight
-                    widget: number
-                    value_type: int
+                  - label: "排序权重"
+                    name: "weight"
+                    widget: "number"
+                    value_type: "int"
                     required: false
-                  - label: "\u53c2\u6570"
-                    name: params
-                    widget: object
+                  - label: "参数"
+                    name: "params"
+                    widget: "object"
                     required: false
                     fields:
-                      - label: "\u56fe\u6807"
-                        name: icon
-                        widget: string
+                      - label: "图标"
+                        name: "icon"
+                        widget: "string"
                         required: false
-          - label: "\u6b63\u6587"
-            name: body
-            widget: markdown
+          - label: "正文"
+            name: "body"
+            widget: "markdown"
             required: false
 
-      - name: about
-        label: "\u5173\u4e8e"
-        file: content/page/about/index.zh.md
+      - name: "about"
+        label: "关于"
+        file: "content/page/about/index.zh.md"
         fields:
-          - label: "\u6807\u9898"
-            name: title
-            widget: string
-          - label: "\u63cf\u8ff0"
-            name: description
-            widget: text
+          - label: "标题"
+            name: "title"
+            widget: "string"
+          - label: "描述"
+            name: "description"
+            widget: "text"
             required: false
-          - label: "\u65e5\u671f"
-            name: date
-            widget: datetime
-            format: YYYY-MM-DD
-            date_format: YYYY-MM-DD
+          - label: "日期"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            date_format: "YYYY-MM-DD"
             time_format: false
-            required: false
-          - label: "\u6700\u540e\u4fee\u6539"
-            name: lastmod
-            widget: datetime
-            format: YYYY-MM-DD
-            date_format: YYYY-MM-DD
+          - label: "最后修改"
+            name: "lastmod"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            date_format: "YYYY-MM-DD"
             time_format: false
-            required: false
-          - label: "\u83dc\u5355"
-            name: menu
-            widget: object
+          - label: "菜单"
+            name: "menu"
+            widget: "object"
             required: false
             collapsed: true
             fields:
-              - label: "\u4e3b\u83dc\u5355"
-                name: main
-                widget: object
+              - label: "主菜单"
+                name: "main"
+                widget: "object"
                 required: false
                 fields:
-                  - label: "\u540d\u79f0"
-                    name: name
-                    widget: string
+                  - label: "名称"
+                    name: "name"
+                    widget: "string"
                     required: false
-                  - label: "\u6392\u5e8f\u6743\u91cd"
-                    name: weight
-                    widget: number
-                    value_type: int
+                  - label: "排序权重"
+                    name: "weight"
+                    widget: "number"
+                    value_type: "int"
                     required: false
-                  - label: "\u53c2\u6570"
-                    name: params
-                    widget: object
+                  - label: "参数"
+                    name: "params"
+                    widget: "object"
                     required: false
                     fields:
-                      - label: "\u56fe\u6807"
-                        name: icon
-                        widget: string
+                      - label: "图标"
+                        name: "icon"
+                        widget: "string"
                         required: false
-          - label: "\u6b63\u6587"
-            name: body
-            widget: markdown
+          - label: "正文"
+            name: "body"
+            widget: "markdown"
 
-      - name: links
-        label: "\u94fe\u63a5"
-        file: content/page/links/index.zh.md
+      - name: "links"
+        label: "链接"
+        file: "content/page/links/index.zh.md"
         fields:
-          - label: "\u6807\u9898"
-            name: title
-            widget: string
-          - label: "\u94fe\u63a5\u5217\u8868"
-            name: links
-            widget: list
+          - label: "标题"
+            name: "title"
+            widget: "string"
+          - label: "链接列表"
+            name: "links"
+            widget: "list"
             required: false
             fields:
-              - label: "\u6807\u9898"
-                name: title
-                widget: string
-              - label: "\u63cf\u8ff0"
-                name: description
-                widget: text
+              - label: "标题"
+                name: "title"
+                widget: "string"
+              - label: "描述"
+                name: "description"
+                widget: "text"
                 required: false
-              - label: "\u7f51\u7ad9"
-                name: website
-                widget: string
-              - label: "\u56fe\u7247"
-                name: image
-                widget: image
+              - label: "网站"
+                name: "website"
+                widget: "string"
+              - label: "图片"
+                name: "image"
+                widget: "image"
                 required: false
-          - label: "\u83dc\u5355"
-            name: menu
-            widget: object
+          - label: "菜单"
+            name: "menu"
+            widget: "object"
             required: false
             collapsed: true
             fields:
-              - label: "\u4e3b\u83dc\u5355"
-                name: main
-                widget: object
+              - label: "主菜单"
+                name: "main"
+                widget: "object"
                 required: false
                 fields:
-                  - label: "\u540d\u79f0"
-                    name: name
-                    widget: string
+                  - label: "名称"
+                    name: "name"
+                    widget: "string"
                     required: false
-                  - label: "\u6392\u5e8f\u6743\u91cd"
-                    name: weight
-                    widget: number
-                    value_type: int
+                  - label: "排序权重"
+                    name: "weight"
+                    widget: "number"
+                    value_type: "int"
                     required: false
-                  - label: "\u53c2\u6570"
-                    name: params
-                    widget: object
+                  - label: "参数"
+                    name: "params"
+                    widget: "object"
                     required: false
                     fields:
-                      - label: "\u56fe\u6807"
-                        name: icon
-                        widget: string
+                      - label: "图标"
+                        name: "icon"
+                        widget: "string"
                         required: false
-          - label: "\u8bc4\u8bba"
-            name: comments
-            widget: boolean
+          - label: "评论"
+            name: "comments"
+            widget: "boolean"
             required: false
-          - label: "\u6b63\u6587"
-            name: body
-            widget: markdown
+          - label: "正文"
+            name: "body"
+            widget: "markdown"
             required: false
 
-      - name: archives
-        label: "\u5f52\u6863"
-        file: content/page/archives/index.zh.md
+      - name: "archives"
+        label: "归档"
+        file: "content/page/archives/index.zh.md"
         fields:
-          - label: "\u6807\u9898"
-            name: title
-            widget: string
-          - label: "\u65e5\u671f"
-            name: date
-            widget: datetime
-            format: YYYY-MM-DD
-            date_format: YYYY-MM-DD
+          - label: "标题"
+            name: "title"
+            widget: "string"
+          - label: "日期"
+            name: "date"
+            widget: "datetime"
+            format: "YYYY-MM-DD"
+            date_format: "YYYY-MM-DD"
             time_format: false
-            required: false
-          - label: "\u5e03\u5c40"
-            name: layout
-            widget: hidden
-            default: archives
-          - label: "\u522b\u540d"
-            name: slug
-            widget: hidden
-            default: archives
-          - label: "\u83dc\u5355"
-            name: menu
-            widget: object
+          - label: "布局"
+            name: "layout"
+            widget: "hidden"
+            default: "archives"
+          - label: "别名"
+            name: "slug"
+            widget: "hidden"
+            default: "archives"
+          - label: "菜单"
+            name: "menu"
+            widget: "object"
             required: false
             collapsed: true
             fields:
-              - label: "\u4e3b\u83dc\u5355"
-                name: main
-                widget: object
+              - label: "主菜单"
+                name: "main"
+                widget: "object"
                 required: false
                 fields:
-                  - label: "\u540d\u79f0"
-                    name: name
-                    widget: string
+                  - label: "名称"
+                    name: "name"
+                    widget: "string"
                     required: false
-                  - label: "\u6392\u5e8f\u6743\u91cd"
-                    name: weight
-                    widget: number
-                    value_type: int
+                  - label: "排序权重"
+                    name: "weight"
+                    widget: "number"
+                    value_type: "int"
                     required: false
-                  - label: "\u53c2\u6570"
-                    name: params
-                    widget: object
+                  - label: "参数"
+                    name: "params"
+                    widget: "object"
                     required: false
                     fields:
-                      - label: "\u56fe\u6807"
-                        name: icon
-                        widget: string
+                      - label: "图标"
+                        name: "icon"
+                        widget: "string"
                         required: false
-          - label: "\u6b63\u6587"
-            name: body
-            widget: markdown
+          - label: "正文"
+            name: "body"
+            widget: "markdown"
             required: false
