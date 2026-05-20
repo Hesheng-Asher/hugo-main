@@ -12,4 +12,4 @@ hasCJKLanguage         = true
     page = "/:slug/"
 
 [services.disqus]
-    shortname = "hugo-theme-stack"
+    shortname = "heshengblog"
