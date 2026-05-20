@@ -45,12 +45,3 @@ favicon        = "img/avatar.png"
     darkTheme = "preferred_color_scheme"
     lang = "zh-CN"
     loading = "lazy"
-
-# GDPR Cookie Consent Configuration
-# When enabled, analytics and functional cookies require user consent
-[cookies]
-    enabled = false
-
-    [cookies.categories]
-        analytics  = true
-        functional = true
